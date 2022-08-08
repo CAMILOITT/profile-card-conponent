@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__information container__information--person">
+        <img
+          src="images/image-victor.jpg"
+          alt="Victor Crest"
+          class="container__img"
+        />
+        <p class="information__name">
+          Victor Crest <span class="information__age">26</span>
+        </p>
+        <p class="information__city">London</p>
+      </div>
+
+      <div class="container__information container__information--social">
+        <div class="information__followers">
+          <p class="followers__information">80K</p>
+
+          <p class="followers__title">Followers</p>
+        </div>
+        <div class="information__likes">
+          <p class="followers__information">803K</p>
+          <p class="followers__title">Likes</p>
+        </div>
+        <div class="information__photos">
+          <p class="followers__information">1.4K</p>
+          <p class="followers__title">Photos</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

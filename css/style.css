@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  /* # Front-end Style Guide */
+  /* ## Layout */
+  /* The designs were created to the following widths: */
+  /* - Mobile: 375px */
+  /* - Desktop: 1440px */
+
+  /* ## Colors */
+  /* ### Primary */
+
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* ### Neutral */
+
+  --Dark-gray: hsl(0, 0%, 59%);
+
+  /* ## Typography */
+  /* ### Body Copy */
+
+  /* - Font size (name and stats): 18px */
+
+  /* ### Font */
+  /* - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans) */
+  /* - Weights: 400, 700 */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: var(--Dark-cyan);
+  background-image: url('../images/bg-pattern-top.svg'),
+    url('../images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: -300px 200%, 650px -230%;
+  background-size: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.container {
+  width: 300px;
+  height: 350px;
+  background: white;
+  background-image: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.container__img {
+  border: 5px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.container__information {
+  position: absolute;
+}
+.container__information--person {
+  top: 87px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.information__name {
+  font-weight: bold;
+  color: var(--Very-dark-desaturated-blue);
+}
+.information__age,
+.information__city {
+  font-weight: 400;
+  color: var(--Dark-gray);
+}
+.container__information--social {
+  width: 100%;
+  display: flex;
+  gap: clamp(5px, 5%, 10px);
+  justify-content: space-around;
+  align-items: center;
+  padding: clamp(15px, 10%, 25px);
+  border-top: 1px solid var(--Dark-gray);
+
+  bottom: 0;
+}
+.information__name,
+.followers__information {
+  font-weight: bold;
+  color: var(--Very-dark-desaturated-blue);
+}
+.followers__title {
+  font-size: 0.8em;
+  color: var(--Dark-gray);
+}
