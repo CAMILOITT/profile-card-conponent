@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 :root {
-  /* ############# Front-end Style Guide ############*/
-  /* ## Layout */
-  /* The designs were created to the following widths:
-    - Mobile: 375px
-    - Desktop: 1440px */
-
   /*------------------- Colors -------------------*/
   /* ### Primary */
   --Dark-cyan: hsl(185, 75%, 39%);
@@ -17,7 +11,7 @@
   --Dark-gray: hsl(0, 0%, 59%);
 
   /* Typography -----------------------------------*/
-  /* - Font size (name and stats): 18px */
+  --FontSizeNameAndStats: 18px;
 }
 * {
   margin: 0;
@@ -37,6 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5px;
+  font-size: var(--FontSizeNameAndStats);
 }
 .container {
   width: 300px;
@@ -73,6 +68,7 @@ body {
 .information__name {
   font-weight: bold;
   color: var(--Very-dark-desaturated-blue);
+  font-size: 1em;
 }
 .information__age,
 .information__city {
@@ -87,7 +83,7 @@ body {
   align-items: center;
   padding: clamp(15px, 10%, 25px);
   border-top: 1px solid var(--Dark-gray);
-
+  font-size: 1em;
   bottom: 0;
 }
 .information__name,
